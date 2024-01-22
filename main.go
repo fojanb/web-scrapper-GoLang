@@ -33,7 +33,8 @@ func main() {
 	// opening the CSV file 
 	file, err := os.Create("products.csv") 
 	if err != nil { 
-		fmt.Print("Failed to create output CSV file", err) 
+		fmt.Print("Failed to create output CSV file", err)
+		return
 	} 
 	defer file.Close() 
  
